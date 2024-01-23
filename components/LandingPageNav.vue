@@ -8,7 +8,7 @@
           >
         </a>
       <div>
-        <VLandingPageLink class="mr-1.5" to="#features"
+        <VLandingPageLink class="mr-1.5" to="#header"
         >Home
         </VLandingPageLink
         >
@@ -16,15 +16,15 @@
         >Features
         </VLandingPageLink
         >
-        <VLandingPageLink class="mr-1.5" to="#features"
+        <VLandingPageLink class="mr-1.5" to="#tech"
         >Tech
         </VLandingPageLink
         >
-        <VLandingPageLink class="mr-1.5" to="#features"
+        <VLandingPageLink class="mr-1.5" to="#faq"
         >FAQ
         </VLandingPageLink
         >
-        <VLandingPageLink to="#features">Contributors</VLandingPageLink>
+        <VLandingPageLink to="#contributors">Contributors</VLandingPageLink>
       </div>
     </div>
   </nav>

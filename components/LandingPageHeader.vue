@@ -1,5 +1,8 @@
+<script setup lang="ts">
+</script>
+
 <template>
-  <header class="relative z-10 flex items-center font-mona flex-col">
+  <header class="relative z-10 flex items-center font-mona flex-col" id="header">
     <img
       class="absolute top-0 -z-10 left-0 w-full block"
       src="/images/bg-landing-page.svg"
@@ -46,5 +49,3 @@
     </div>
   </header>
 </template>
-<script setup lang="ts">
-</script>
