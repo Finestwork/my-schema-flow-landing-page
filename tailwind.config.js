@@ -5,8 +5,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'mona': 'MonaSans'
-      }
+        mona: 'MonaSans',
+      },
+      colors: {
+        'title-dark': '#101828',
+        'message-dark': '#475467',
+      },
     },
   },
   plugins: [],

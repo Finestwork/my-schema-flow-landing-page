@@ -30,7 +30,6 @@ module.exports = {
     'vue/require-default-prop': 0,
     'vue/multi-word-component-names': 0,
     indent: ['error', 2],
-    'linebreak-style': ['error', 'windows'],
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
   },

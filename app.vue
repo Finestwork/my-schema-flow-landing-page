@@ -7,8 +7,9 @@ const header = ref();
 useCalculateTopPadding(header, nav);
 </script>
 <template>
-  <div class="relative pb-52">
+  <div class="relative pb-[100rem]">
     <LandingPageNav ref="nav" />
     <LandingPageHeader ref="header" class="pt-4" />
+    <LandingPageFeature/>
   </div>
 </template>

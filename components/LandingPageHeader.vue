@@ -10,7 +10,7 @@
     />
 
     <div
-      class="flex items-center text-cyan-800 font-medium bg-cyan-100 border-2 mt-8 text-xs rounded-full px-2 py-1 border-cyan-200">
+      class="flex items-center text-cyan-800 font-medium bg-cyan-100 border-2 mt-16 text-xs rounded-full px-2 py-1 border-cyan-200">
       <span class="bg-cyan-800 text-white px-2 py-1.5 rounded-full mr-1">Version 1.0</span>
       We’ve just released a new feature
       <span class="block w-[12px] mt-[.13rem] ml-2">
@@ -18,7 +18,7 @@
       </span>
     </div>
 
-    <h1 class="font-extrabold text-[4.5rem] max-w-[1200px] text-center">
+    <h1 class="font-extrabold text-[#101828] text-[4.5rem] max-w-[1200px] text-center">
       Simplify Database Visualization with <span class="relative">MySchemaFlow <img
       class="w-[90%] right-0 mx-auto absolute bottom-0 translate-y-10 left-0 -z-10"
       src="/images/title-highlighter.svg" alt="Abstract shape used for highlighting titles" /></span>
@@ -44,7 +44,7 @@
     </div>
 
     <div class="w-[80%] mx-auto relative">
-      <img class="block  mt-16 drop-shadow-lg drop-shadow-slate-400/10" src="/images/sample.png" alt="Screenshot of MySchemaFlow"/>
+      <img class="block mt-16 drop-shadow-lg drop-shadow-slate-400/10" src="/images/sample.png" alt="Screenshot of MySchemaFlow"/>
       <span class="block translate-y-4 w-full h-[50%] absolute bottom-0 left-0 bg-gradient-to-t from-white"/>
     </div>
   </header>
