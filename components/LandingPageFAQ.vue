@@ -1,6 +1,6 @@
 <template>
-  <div class="font-mona">
-    <VSectionLayout id="faq" class="mt-16 text-center">
+  <div id="faq" class="font-mona">
+    <VSectionLayout class="mb-16 text-center">
       <h2 class="text-[3rem] font-black text-title-dark">
         Frequently Asked Questions
       </h2>
@@ -70,7 +70,7 @@
         >.
       </p>
     </VSectionLayout>
-    <div class="mt-16 bg-[#f1f7fd] py-16">
+    <div class="bg-[#f1f7fd] py-16">
       <VSectionLayout class="flex">
         <div class="flex w-6/12 flex-col">
           <h3 class="w-[600px] text-4xl font-black text-title-dark">

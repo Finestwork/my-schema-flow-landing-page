@@ -5,7 +5,10 @@ type TProps = {
 const props = defineProps<TProps>();
 </script>
 <template>
-  <NuxtLink class="font-bold text-sm text-slate-900 font-mona hover:text-cyan-600 focus-visible:text-cyan-600" :to="props.to">
+  <a
+    class="font-mona text-sm font-bold text-slate-900 hover:text-cyan-600 focus-visible:text-cyan-600"
+    :href="props.to"
+  >
     <slot></slot>
-  </NuxtLink>
+  </a>
 </template>

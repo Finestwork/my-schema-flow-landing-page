@@ -12,9 +12,9 @@ useCalculateTopPadding(header, nav);
 <template>
   <div class="relative">
     <LandingPageNav ref="nav" />
-    <LandingPageHeader ref="header" class="pt-4" />
+    <LandingPageHeader ref="header" class="mb-[10rem]" />
     <LandingPageFeature />
-    <LandingPageTech />
+    <LandingPageTech class="my-16" />
     <LandingPageFAQ />
     <LandingPageFooter />
   </div>

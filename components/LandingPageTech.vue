@@ -1,13 +1,13 @@
 <template>
-  <section id="tech" class="bg-[#f1f7fd] py-8 font-mona">
+  <section id="tech" class="bg-[#f1f7fd] font-mona">
     <VSectionLayout class="flex">
       <div class="w-6/12] flex flex-col justify-center">
         <h2
-          class="text-title-dark w-6/12 text-[3rem] font-black leading-[50px]"
+          class="w-6/12 text-[3rem] font-black leading-[50px] text-title-dark"
         >
           Built with the modern tech stack
         </h2>
-        <p class="text-message-dark mt-4 w-10/12 font-medium">
+        <p class="mt-4 w-10/12 font-medium text-message-dark">
           Our tech stack includes Vue for building the user interface, Tailwind
           for efficient styling, Electron.js for creating cross-platform desktop
           applications, and Pinia store for state management.
@@ -21,7 +21,7 @@
         </div>
 
         <div class="mt-4 flex">
-          <GithubLink />
+          <GithubLink class="mr-3" />
           <DownloadLink />
         </div>
       </div>

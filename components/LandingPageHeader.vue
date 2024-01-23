@@ -46,7 +46,7 @@ import DownloadLink from '~/components/DownloadLink.vue';
     </p>
 
     <div class="mt-8 flex items-center">
-      <GithubLink />
+      <GithubLink class="mr-3" />
       <DownloadLink />
     </div>
 

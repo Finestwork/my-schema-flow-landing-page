@@ -1,5 +1,5 @@
 <template>
-  <section id="features" class="pt-[10rem] font-mona">
+  <section id="features" class="font-mona">
     <VSectionLayout>
       <h2 class="text-center text-[3rem] font-black text-[#101828]">
         Create Database Diagrams
