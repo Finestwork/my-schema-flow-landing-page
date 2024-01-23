@@ -7,10 +7,15 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts,.vue --fix"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.20.1",
     "nuxt": "^3.9.3",
     "prettier": "3.2.4",
     "prettier-plugin-tailwindcss": "^0.5.11",
