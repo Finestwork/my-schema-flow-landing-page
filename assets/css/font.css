@@ -1,0 +1,112 @@
+/* ExtraLight */
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-ExtraLightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Light */
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'MonaSans';
+    font-weight: 400;
+    src: url('../fonts/MonaSans-Regular.woff2') format('woff2');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Semi Bold */
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* ExtraBold */
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+/* Black */
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../fonts/MonaSans-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
