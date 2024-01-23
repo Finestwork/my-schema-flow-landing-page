@@ -1,6 +1,6 @@
 <template>
   <a
-    class="flex h-full items-center rounded-md bg-gradient-to-tr from-cyan-700 to-cyan-600 px-4 py-2 outline-none ring-0 ring-cyan-700/50 transition-all hover:bg-gradient-to-tl focus-visible:ring-4"
+    class="flex h-[50px] items-center rounded-md bg-gradient-to-tr from-cyan-700 to-cyan-600 px-4 outline-none ring-0 ring-cyan-700/50 transition-all hover:bg-gradient-to-tl focus-visible:ring-4"
     href="https://github.com/Finestwork/my-schema-flow/releases/tag/v1.0.0"
     target="_blank"
   >

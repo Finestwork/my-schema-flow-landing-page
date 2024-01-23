@@ -1,6 +1,6 @@
 <template>
   <a
-    class="group mr-2 flex items-center rounded-md border-2 border-slate-300 px-4 py-2 outline-none ring-0 transition-shadow hover:border-cyan-500 focus:ring-cyan-500/50 focus-visible:border-cyan-500 focus-visible:ring-4"
+    class="group flex h-[50px] items-center rounded-md border-2 border-slate-300 px-4 outline-none ring-0 transition-shadow hover:border-cyan-500 focus:ring-cyan-500/50 focus-visible:border-cyan-500 focus-visible:ring-4"
     href="https://github.com/Finestwork/my-schema-flow"
     target="_blank"
   >

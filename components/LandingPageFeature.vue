@@ -1,6 +1,6 @@
 <template>
   <section id="features" class="pt-[10rem] font-mona">
-    <div class="mx-auto w-[90%]">
+    <VSectionLayout>
       <h2 class="text-center text-[3rem] font-black text-[#101828]">
         Create Database Diagrams
         <span class="relative text-cyan-500"
@@ -75,6 +75,9 @@
           >
         </VFeatureCard>
       </div>
-    </div>
+    </VSectionLayout>
   </section>
 </template>
+<script setup lang="ts">
+import VSectionLayout from '~/components/VSectionLayout.vue';
+</script>
