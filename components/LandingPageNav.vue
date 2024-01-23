@@ -32,7 +32,13 @@ onUnmounted(() => {
         href="/"
         class="flex items-center outline-none ring-0 ring-cyan-500/50 transition-shadow focus-visible:ring-4"
       >
-        <Logo class="h-[35px] w-[35px] rounded-md p-1" />
+        <Logo
+          class="rounded-md p-1 transition-all"
+          :class="{
+            'h-[35px] w-[35px]': !shouldBlur,
+            'h-[25px] w-[25px]': shouldBlur,
+          }"
+        />
         <span class="text-md ml-1.5 font-mona font-extrabold text-slate-900"
           >MySchemaFlow</span
         >
