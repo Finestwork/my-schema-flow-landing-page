@@ -5,7 +5,7 @@ type TProps = {
 const props = defineProps<TProps>();
 </script>
 <template>
-  <NuxtLink class="font-semibold font-mona" :to="props.to">
+  <NuxtLink class="font-bold text-slate-900 font-mona" :to="props.to">
     <slot></slot>
   </NuxtLink>
 </template>
