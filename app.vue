@@ -1,4 +1,4 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 import { useCalculateTopPadding } from '~/composables/useCalculateTopPadding';
 import { ref } from 'vue';
 
@@ -10,6 +10,7 @@ useCalculateTopPadding(header, nav);
   <div class="relative pb-[100rem]">
     <LandingPageNav ref="nav" />
     <LandingPageHeader ref="header" class="pt-4" />
-    <LandingPageFeature/>
+    <LandingPageFeature />
+    <LandingPageTech />
   </div>
 </template>
