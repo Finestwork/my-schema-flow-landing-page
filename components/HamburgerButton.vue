@@ -3,17 +3,20 @@ import anime from 'animejs/lib/anime.es.js';
 import { ref } from 'vue';
 import type { AnimeInstance } from 'animejs';
 
+type TProps = {
+  activate: boolean;
+};
+const emits = defineEmits<{
+  (e: 'onClick'): void;
+}>();
+const props = defineProps<TProps>();
 const lines = ref<Array<HTMLElement>>([]);
 const isActive = ref(false);
 let line1Animation: AnimeInstance | null = null;
 let line2Animation: AnimeInstance | null = null;
 let line3Animation: AnimeInstance | null = null;
 
-const onClickToggleActive = () => {
-  if (lines.value.length === 0) return;
-
-  isActive.value = !isActive.value;
-
+const toggleAnimation = () => {
   const Line1 = lines.value[0];
   const Line2 = lines.value[1];
   const Line3 = lines.value[2];
@@ -43,6 +46,7 @@ const onClickToggleActive = () => {
       targets: Line3,
       keyframes: [{ top: '50%' }, { translateX: '-50%', rotate: '-405deg' }],
     });
+    emits('onClick');
     return;
   }
 
@@ -61,6 +65,20 @@ const onClickToggleActive = () => {
     keyframes: [{ translateX: '-50%', rotate: '0deg' }, { top: '70%' }],
   });
 };
+const onClickToggleActive = () => {
+  if (lines.value.length === 0) return;
+
+  isActive.value = !isActive.value;
+  toggleAnimation();
+  emits('onClick');
+};
+watch(
+  () => props.activate,
+  (activate) => {
+    isActive.value = activate;
+    toggleAnimation();
+  },
+);
 </script>
 <template>
   <button

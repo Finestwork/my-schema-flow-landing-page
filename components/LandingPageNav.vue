@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import { useNavDrawerTransition } from '~/composables/useNavDrawerTransition';
 import { useSweetScroll } from '~/composables/useSweetScroll';
 import { onMounted, onUnmounted, ref } from 'vue';
-import HamburgerButton from '~/components/HamburgerButton.vue';
 
 const nav = ref<HTMLElement>();
+const shouldDisplayDrawer = ref(false);
 const shouldBlur = ref(false);
+const { onEnter, onLeave } = useNavDrawerTransition();
 
 const trackScrollPosition = () => {
   const Height = nav.value?.offsetHeight ?? 0;
@@ -46,7 +48,7 @@ onUnmounted(() => {
         >
       </a>
       <div class="hidden *:mr-3.5 sm:block">
-        <VLandingPageLink class="link" to="#header">Home</VLandingPageLink>
+        <VLandingPageLink class="link" to="#home">Home</VLandingPageLink>
         <VLandingPageLink class="link" to="#features"
           >Features
         </VLandingPageLink>
@@ -54,7 +56,21 @@ onUnmounted(() => {
         <VLandingPageLink class="link" to="#faq">FAQ</VLandingPageLink>
       </div>
 
-      <HamburgerButton class="block sm:hidden" />
+      <HamburgerButton
+        ref="hamburgerBtn"
+        class="block sm:hidden"
+        :activate="shouldDisplayDrawer"
+        @on-click="shouldDisplayDrawer = true"
+      />
+
+      <Teleport to="body">
+        <Transition @enter="onEnter" @leave="onLeave">
+          <LandingPageNavDrawer
+            v-if="shouldDisplayDrawer"
+            v-model:show="shouldDisplayDrawer"
+          />
+        </Transition>
+      </Teleport>
     </div>
   </nav>
 </template>

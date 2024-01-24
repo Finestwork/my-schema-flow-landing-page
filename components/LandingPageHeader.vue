@@ -4,10 +4,7 @@ import DownloadLink from '~/components/DownloadLink.vue';
 </script>
 
 <template>
-  <header
-    id="header"
-    class="relative z-10 flex flex-col items-center font-mona"
-  >
+  <header id="home" class="relative z-10 flex flex-col items-center font-mona">
     <img
       class="absolute left-0 top-0 -z-10 block w-full"
       src="/images/bg-landing-page.svg"
