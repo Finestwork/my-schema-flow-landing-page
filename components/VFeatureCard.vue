@@ -5,10 +5,10 @@
     >
       <slot name="icon"></slot>
     </span>
-    <h3 class="text-title-dark text-md mt-5 font-bold">
+    <h3 class="text-md mt-5 font-bold text-title-dark">
       <slot name="title"></slot>
     </h3>
-    <p class="text-message-dark text-center text-sm font-medium">
+    <p class="text-center text-sm font-medium text-message-dark">
       <slot name="msg"></slot>
     </p>
   </article>

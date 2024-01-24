@@ -4,7 +4,7 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   extends: [
     'eslint:recommended',
@@ -16,18 +16,18 @@ module.exports = {
   overrides: [
     {
       env: {
-        node: true
+        node: true,
       },
       files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
-        sourceType: 'script'
-      }
-    }
+        sourceType: 'script',
+      },
+    },
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'vue'],
   rules: {
@@ -36,6 +36,6 @@ module.exports = {
     'vue/multi-word-component-names': 0,
     indent: ['error', 2],
     quotes: ['error', 'single'],
-    semi: ['error', 'always']
-  }
+    semi: ['error', 'always'],
+  },
 };

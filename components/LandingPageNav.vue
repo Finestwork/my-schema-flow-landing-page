@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useSweetScroll } from '~/composables/useSweetScroll';
 import { onMounted, onUnmounted, ref } from 'vue';
+import HamburgerButton from '~/components/HamburgerButton.vue';
 
 const nav = ref<HTMLElement>();
 const shouldBlur = ref(false);
@@ -39,11 +40,12 @@ onUnmounted(() => {
             'h-[25px] w-[25px]': shouldBlur,
           }"
         />
-        <span class="text-md ml-1.5 font-mona font-extrabold text-slate-900"
+        <span
+          class="text-md ml-1.5 hidden font-mona font-extrabold text-slate-900 sm:block"
           >MySchemaFlow</span
         >
       </a>
-      <div class="*:mr-3.5">
+      <div class="hidden *:mr-3.5 sm:block">
         <VLandingPageLink class="link" to="#header">Home</VLandingPageLink>
         <VLandingPageLink class="link" to="#features"
           >Features
@@ -51,6 +53,8 @@ onUnmounted(() => {
         <VLandingPageLink class="link" to="#tech">Tech</VLandingPageLink>
         <VLandingPageLink class="link" to="#faq">FAQ</VLandingPageLink>
       </div>
+
+      <HamburgerButton class="block sm:hidden" />
     </div>
   </nav>
 </template>

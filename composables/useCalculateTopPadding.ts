@@ -1,14 +1,17 @@
-import { toValue,  onMounted, onUnmounted } from 'vue';
+import { toValue, onMounted, onUnmounted } from 'vue';
 import type { MaybeRefOrGetter } from 'vue';
 
-export function useCalculateTopPadding(target: MaybeRefOrGetter, source: MaybeRefOrGetter) {
+export function useCalculateTopPadding(
+  target: MaybeRefOrGetter,
+  source: MaybeRefOrGetter,
+) {
   const calculatePadding = () => {
     const TargetElement = toValue(target);
     const SourceElement = toValue(source);
     if (!TargetElement || !SourceElement) return;
     const { height } = SourceElement.$el.getBoundingClientRect();
     Object.assign(TargetElement.$el.style, {
-      paddingTop: `${height}px`
+      paddingTop: `${height}px`,
     });
   };
 
@@ -21,6 +24,6 @@ export function useCalculateTopPadding(target: MaybeRefOrGetter, source: MaybeRe
   });
 
   return {
-    calculatePadding
+    calculatePadding,
   };
 }

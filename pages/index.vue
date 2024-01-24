@@ -1,3 +1,3 @@
 <template>
-    <p>Hello from index</p>
+  <p>Hello from index</p>
 </template>

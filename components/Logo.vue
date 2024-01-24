@@ -1,7 +1,7 @@
 <template>
   <span class="block bg-cyan-950">
     <svg
-      class="block w-full h-full"
+      class="block h-full w-full"
       width="25"
       height="27"
       viewBox="0 0 25 27"
