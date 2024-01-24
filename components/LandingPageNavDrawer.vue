@@ -12,7 +12,7 @@ const { show } = defineModels<{
     />
     <div
       id="drawer"
-      class="absolute right-0 top-0 flex h-full w-[80%] max-w-[350px] flex-col bg-white"
+      class="absolute right-0 top-0 flex h-full w-[80%] max-w-[350px] flex-col overflow-y-scroll bg-white"
     >
       <LandingPageNavDrawerLink href="#home"> Home</LandingPageNavDrawerLink>
       <LandingPageNavDrawerLink href="#features">

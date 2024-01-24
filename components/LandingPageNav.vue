@@ -20,6 +20,15 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', trackScrollPosition);
 });
+watch(shouldDisplayDrawer, (display) => {
+  if (display) {
+    document.body.style.overflowY = 'hidden';
+    return;
+  }
+  Object.assign(document.body.style, {
+    overflowY: null,
+  });
+});
 </script>
 
 <template>
