@@ -2,8 +2,8 @@ import anime from 'animejs/lib/anime.es';
 
 export function useNavDrawerTransition() {
   const onEnter = (el: Element, done: () => void) => {
-    const Background = el?.children?.background ?? null;
-    const Drawer = el?.children?.drawer ?? null;
+    const Background = <HTMLElement>el.childNodes[0];
+    const Drawer = <HTMLElement>el.childNodes[1];
     if (!Background || !Drawer) return;
     Object.assign(Background.style, {
       opacity: '0',
@@ -25,9 +25,9 @@ export function useNavDrawerTransition() {
       complete: done,
     });
   };
-  const onLeave = (el, done) => {
-    const Background = el?.children?.background ?? null;
-    const Drawer = el?.children?.drawer ?? null;
+  const onLeave = (el: Element, done: () => void) => {
+    const Background = el.childNodes[0];
+    const Drawer = el.childNodes[1];
     if (!Background || !Drawer) return;
     anime({
       targets: Background,

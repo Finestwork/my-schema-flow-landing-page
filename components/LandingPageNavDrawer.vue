@@ -14,12 +14,18 @@ const { show } = defineModels<{
       id="drawer"
       class="absolute right-0 top-0 flex h-full w-[80%] max-w-[350px] flex-col overflow-y-scroll bg-white"
     >
-      <LandingPageNavDrawerLink href="#home"> Home</LandingPageNavDrawerLink>
-      <LandingPageNavDrawerLink href="#features">
+      <LandingPageNavDrawerLink href="#home" @click="show = false">
+        Home</LandingPageNavDrawerLink
+      >
+      <LandingPageNavDrawerLink href="#features" @click="show = false">
         Features
       </LandingPageNavDrawerLink>
-      <LandingPageNavDrawerLink href="#tech"> Tech</LandingPageNavDrawerLink>
-      <LandingPageNavDrawerLink href="#faq"> FAQ</LandingPageNavDrawerLink>
+      <LandingPageNavDrawerLink href="#tech" @click="show = false">
+        Tech</LandingPageNavDrawerLink
+      >
+      <LandingPageNavDrawerLink href="#faq" @click="show = false">
+        FAQ</LandingPageNavDrawerLink
+      >
     </div>
   </div>
 </template>
