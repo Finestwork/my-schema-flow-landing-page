@@ -1,17 +1,21 @@
 <template>
   <section id="features" class="font-mona">
     <VSectionLayout>
-      <h2 class="text-center text-[3rem] font-black text-[#101828]">
+      <h2
+        class="mx-auto max-w-[285px] text-center text-lg font-black text-[#101828] min-[450px]:max-w-[400px] min-[450px]:text-3xl min-[550px]:text-4xl lg:max-w-none lg:text-[3rem]"
+      >
         Create Database Diagrams
         <span class="relative text-cyan-500"
           >with Ease
-          <span class="absolute bottom-0 left-0 w-full translate-y-8">
+          <span
+            class="absolute bottom-0 left-0 w-full translate-y-4 min-[450px]:translate-y-6 min-[1000px]:translate-y-8"
+          >
             <IllustrationCurlyUnderline class="fill-cyan-500" />
           </span>
         </span>
       </h2>
       <div class="mt-24 flex flex-wrap *:mb-16">
-        <VFeatureCard class="w-4/12">
+        <VFeatureCard class="w-full md:w-6/12 lg:w-4/12">
           <template #icon>
             <IconStack />
           </template>
@@ -22,7 +26,7 @@
             between tables, columns, and constraints
           </template>
         </VFeatureCard>
-        <VFeatureCard class="w-4/12">
+        <VFeatureCard class="w-full md:w-6/12 lg:w-4/12">
           <template #icon>
             <IconMagicStick />
           </template>
@@ -32,7 +36,7 @@
             work with different types of databases and operating systems.
           </template>
         </VFeatureCard>
-        <VFeatureCard class="w-4/12">
+        <VFeatureCard class="w-full md:w-6/12 lg:w-4/12">
           <template #icon>
             <IconExport />
           </template>
@@ -42,7 +46,7 @@
             locally, and export them as images or SQL scripts
           </template>
         </VFeatureCard>
-        <VFeatureCard class="w-4/12">
+        <VFeatureCard class="w-full md:w-6/12 lg:w-4/12">
           <template #icon>
             <IconCode />
           </template>
@@ -52,7 +56,7 @@
             click a button, and we'll handle table creation for you.</template
           >
         </VFeatureCard>
-        <VFeatureCard class="w-4/12">
+        <VFeatureCard class="w-full md:w-6/12 lg:w-4/12">
           <template #icon>
             <IconHand />
           </template>
@@ -63,7 +67,7 @@
             your own table, you can do so easily with MySchemaFlow.</template
           >
         </VFeatureCard>
-        <VFeatureCard class="w-4/12">
+        <VFeatureCard class="w-full md:w-6/12 lg:w-4/12">
           <template #icon>
             <IconExport />
           </template>
@@ -78,6 +82,3 @@
     </VSectionLayout>
   </section>
 </template>
-<script setup lang="ts">
-import VSectionLayout from '~/components/VSectionLayout.vue';
-</script>

@@ -1,10 +1,10 @@
 <template>
   <div id="faq" class="font-mona">
     <VSectionLayout class="mb-16 text-center">
-      <h2 class="text-[3rem] font-black text-title-dark">
+      <h2 class="text-lg font-black text-title-dark lg:text-[3rem]">
         Frequently Asked Questions
       </h2>
-      <p class="text-md text-message-dark">
+      <p class="lg:text-md text-sm text-message-dark lg:mt-6">
         Find answers to common questions about MySchemaFlow and its features.
       </p>
       <div class="mx-auto mt-10 max-w-[800px]">
@@ -71,18 +71,20 @@
       </p>
     </VSectionLayout>
     <div class="bg-[#f1f7fd] py-16">
-      <VSectionLayout class="flex">
-        <div class="flex w-6/12 flex-col">
-          <h3 class="w-[600px] text-4xl font-black text-title-dark">
+      <VSectionLayout class="flex flex-col lg:flex-row">
+        <div class="flex flex-col lg:w-6/12">
+          <h3
+            class="text-xl font-black text-title-dark lg:w-[600px] lg:text-4xl"
+          >
             Create diagrams effortlessly with SchemaFlow
           </h3>
-          <p class="font-medium text-message-dark">
+          <p class="text-xs font-medium text-message-dark lg:text-sm">
             Visualize and comprehend your database structure with our
             user-friendly interface.
           </p>
         </div>
 
-        <div class="flex w-6/12 items-center justify-center">
+        <div class="mt-4 flex w-6/12 lg:mt-0 lg:items-center lg:justify-center">
           <GithubLink class="mr-2" />
           <DownloadLink />
         </div>

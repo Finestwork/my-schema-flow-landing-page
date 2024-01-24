@@ -9,7 +9,7 @@ useCalculateTopPadding(header, nav);
 <template>
   <div class="relative overflow-x-hidden">
     <LandingPageNav ref="nav" />
-    <LandingPageHeader ref="header" class="mb-[10rem]" />
+    <LandingPageHeader ref="header" class="mb-20 md:mb-[10rem]" />
     <LandingPageFeature />
     <LandingPageTech class="my-16" />
     <LandingPageFAQ />

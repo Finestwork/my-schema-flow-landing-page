@@ -8,8 +8,12 @@
         </div>
       </div>
       <hr class="my-4" />
-      <div class="flex justify-between text-xs font-medium text-white">
-        <p>© 2023 SchemaFlow. All rights reserved.</p>
+      <div
+        class="flex flex-col text-xs font-medium text-white sm:flex-row sm:justify-between"
+      >
+        <p class="text-center sm:text-left">
+          © 2023 SchemaFlow. All rights reserved.
+        </p>
         <p class="flex items-center justify-center text-center">
           Designed by
           <a
