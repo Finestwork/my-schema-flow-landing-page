@@ -12,13 +12,20 @@ const trackScrollPosition = () => {
   const Height = nav.value?.offsetHeight ?? 0;
   shouldBlur.value = Height <= window.scrollY;
 };
+const trackViewport = () => {
+  if (shouldDisplayDrawer.value && window.innerWidth >= 640) {
+    shouldDisplayDrawer.value = false;
+  }
+};
 useSweetScroll();
 onMounted(() => {
   trackScrollPosition();
   window.addEventListener('scroll', trackScrollPosition);
+  window.addEventListener('resize', trackViewport);
 });
 onUnmounted(() => {
   window.removeEventListener('scroll', trackScrollPosition);
+  window.removeEventListener('resize', trackViewport);
 });
 watch(shouldDisplayDrawer, (display) => {
   if (display) {
