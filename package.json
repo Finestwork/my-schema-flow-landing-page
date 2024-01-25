@@ -7,11 +7,32 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts,.vue --fix"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "@vue-macros/nuxt": "^1.9.21",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.20.1",
     "nuxt": "^3.9.3",
+    "postcss": "^8.4.33",
+    "prettier": "3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
     "vue": "^3.4.14",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.7.0",
+    "@types/animejs": "^3.1.12",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "@vueuse/core": "^10.7.2",
+    "animejs": "^3.2.2",
+    "sweet-scroll": "^4.0.0"
   }
 }
