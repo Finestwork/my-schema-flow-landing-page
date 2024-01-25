@@ -5,6 +5,10 @@ export default defineNuxtConfig({
       title: 'Welcome to MySchemaFlow! Your database schema visualizer',
       meta: [
         {
+          name: 'canonical',
+          content: '/localhost',
+        },
+        {
           name: 'description',
           content:
             'MySchemaFlow allows you to create visual representations of your database schema, making it easier to understand the relationships between tables, columns, and data types.',
