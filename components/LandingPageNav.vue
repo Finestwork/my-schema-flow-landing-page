@@ -1,12 +1,17 @@
 <script setup lang="ts">
 import { useNavDrawerTransition } from '~/composables/useNavDrawerTransition';
 import { useSweetScroll } from '~/composables/useSweetScroll';
+import { useActiveLinkOnScroll } from '~/composables/useActiveLinkOnScroll';
 import { onMounted, onUnmounted, ref } from 'vue';
 
 const nav = ref<HTMLElement>();
 const shouldDisplayDrawer = ref(false);
 const shouldBlur = ref(false);
 const { onEnter, onLeave } = useNavDrawerTransition();
+useActiveLinkOnScroll({
+  selector: '.link',
+  floatingSelector: '.nav',
+});
 
 const trackScrollPosition = () => {
   const Height = nav.value?.offsetHeight ?? 0;
