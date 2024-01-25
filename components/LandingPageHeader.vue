@@ -7,17 +7,19 @@
     />
 
     <VSectionLayout>
-      <div
-        class="mx-auto mt-10 flex w-[235px] items-center justify-center truncate rounded-full border-2 border-cyan-200 bg-cyan-100 px-2 py-1 text-[.6rem] font-medium text-cyan-800 min-[320px]:w-[255px] md:mt-16"
-      >
-        <span
-          class="mr-1 truncate rounded-full bg-cyan-800 px-2 py-1.5 text-white"
-          >Version 1.0</span
+      <div class="flex justify-center">
+        <div
+          class="mt-10 flex items-center justify-center truncate rounded-full border-2 border-cyan-200 bg-cyan-100 px-2 py-1 text-[.6rem] font-medium text-cyan-800 md:mt-16"
         >
-        We’ve just released a new feature
-        <span class="ml-2 mt-[.13rem] hidden w-[12px] min-[320px]:block">
-          <IconRightArrow class="stroke-cyan-500" />
-        </span>
+          <span
+            class="mr-1 truncate rounded-full bg-cyan-800 px-2 py-1.5 text-white"
+            >Version 1.0</span
+          >
+          We’ve just released a new feature
+          <span class="ml-2 mt-[.13rem] hidden w-[12px] min-[320px]:block">
+            <IconRightArrow class="stroke-cyan-500" />
+          </span>
+        </div>
       </div>
 
       <h1
@@ -59,3 +61,4 @@
     </VSectionLayout>
   </header>
 </template>
+<script setup lang="ts"></script>
